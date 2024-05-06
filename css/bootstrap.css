@@ -1,0 +1,177 @@
+/* responsive */
+
+@media (min-width: 576px) {  
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1200px) {
+}
+
+@media (min-width: 1400px) {
+}
+
+/* variables */
+
+:root {
+    --azul-espacio: #0A0A2A;
+    --azul-claro: #0404B4;
+    --azul-oscuro: #070719;
+    --azul-moderno: #5858FA;
+    --azul-nav: #0B243B;
+    --azul-mas-claro: #4e1460;
+    --negro-transparente: rgba(34, 34, 34, 0.3);
+    --negro-transparente-contacto: rgba(34, 34, 34, 0.3);
+    --negro-transparente-oscuro: rgba(34, 34, 34, 0.60);
+}
+
+/************bootstrap************/
+
+/*imagen del nav icono principal*/
+
+.navbar-brand img{
+width: auto;
+height: 48px;
+}
+
+/*color del nav*/
+
+.bg-light{
+background-color: var(--azul-nav) !important;
+}
+
+/*color que se ilumina al pasar el cursor en el nav*/
+
+.nav-item:hover{
+    background-color: var(--azul-moderno);
+    border-radius: 10px;
+}
+
+/*transicion y espaciado, cuando se pasa el cursor sobre el nav*/
+
+.nav-item{
+    padding-left: 0.5rem;
+    transition: all 0.3s ease-out;
+}
+
+/*transicion y color del submenu*/
+
+.dropdown-item:hover{
+    background-color: var(--azul-mas-claro);
+    transition: all 0.5s ease-out;
+    color: white;
+}
+
+/*color de los links*/
+
+a{
+    color: var(--bs-white);
+}
+
+/*color del link cuando pasas el cursor sobre el*/
+
+a:hover{
+    color: var(--azul-moderno);
+    transition: all 0.3s ease-out;
+}
+
+/*color en degrade del fondo de las paginas*/
+
+.bg-gradient-inicio{
+    background-color: #070719;
+    background-image: linear-gradient(135deg,
+    #000000, 
+    #0A0A2A 79%);
+}
+
+/*color y transicion del boton cuando pasas el cursor encima*/
+
+.btn-outline-secondary:hover{
+    background-color: var(--azul-mas-claro);
+    transition: all 0.3s ease-out;
+}
+
+/*color de fondo de las cards*/
+
+.bg-card-color{
+    background-color: var(--azul-oscuro);
+}
+
+/*color transparente que se pone sobre las imagenes*/
+
+.bg-negro-transparente{
+    background-color: var(--negro-transparente);
+}
+
+/*color de fondo del texto del carrusel de la seccion de contacto*/
+
+.bg-color-carrusel{
+    background-color: var(--negro-transparente-oscuro);
+}
+
+/************alteracion de codigo************/
+
+/*color de los iconos del carrusel*/
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e");
+}
+
+/*color de los iconos del carrusel*/
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+/*imagen de fondo de una seccion*/
+
+.bg-hero-image{
+    background-image: var(--bg-image);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/*color transparente de las imagenes de la seccion clientes*/
+
+.bg-image-contacto{
+    background-color: var(--negro-transparente-contacto);
+}
+
+/*imagenes con bordes redondeados de la seccion comencemos */
+
+.imagen-comencemos{
+    border-radius: 50px;
+    border: 5px solid violet;
+    box-shadow: inset 0 0 5px violet, 0 0 10px violet, 0 0 30px violet;
+}
+
+.hola{
+    border: 2px solid violet;
+    border-radius: 10px;
+    box-shadow: inset 0 0 5px violet, 0 0 10px violet;
+    text-align: center;
+}
+
+/*imagenes con bordes redondeados de la seccion home */
+
+.border-img {
+    border-radius: 20px;
+}
+
+/*color de los precios*/
+
+.money {
+    color: green;
+}
+
+/*tamaño del alto del carrusel de contacto*/
+
+.carousel-item img {
+    height: 700px; 
+}
+

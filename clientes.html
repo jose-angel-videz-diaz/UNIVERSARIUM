@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="icon" href="imagenes/logo_nav.png">
+
+    <title>pagina de clientes</title>
+
+  </head>
+
+  <body>
+
+    <!--barra de navegacion-->
+    
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-light">
+        <div class="container">
+          <a class="navbar-brand" href="home.html">
+            <img src="imagenes/logo_nav.png" alt="icono de inicio">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-lg-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="home.html">Inicio</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Servicios
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="servicios.html#servicio_proyecciones"> Proyecciones astronomicas </a></li>
+                  <li><a class="dropdown-item" href="servicios.html#servicio_exhibiciones"> Exhibiciones interactivas </a></li>
+                  <li><a class="dropdown-item" href="servicios.html#servicio_observacion"> Observación del cielo en vivo </a></li>
+                </ul>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="clientes.html">Clientes</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="precios.html">Precios</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <!--contenido de la pagina-->
+
+    <main class="pt-5 bg-gradient-inicio">
+      <div class="container">
+        <section class="row g-0 pb-5">
+
+          <article class="col-12 text-center text-white">
+            <h2>CLIENTES</h2>
+            <p class="fs-5">Aqui encontraras informacion sobre las asociaciones de nuestros colaboradores</p>
+          </article>
+
+          <!--imagen 1-->
+
+          <article class="col-12">
+            <div class="card bg-dark text-white border-0 rounded-0">
+              <img src="imagenes/clientes_imagen_2.jpg" class="card-img" alt="imagen de cliente 1" height="450px">
+              <div class="card-img-overlay bg-image-contacto d-flex flex-column justify-content-md-center">
+                <h2 class="card-title">SSPACENX</h2>
+                <p class="card-text"><small>Es una organización intergubernamental dedicada a la exploración espacial.</small></p><br>
+                <a href="#" data-bs-toggle="modal" data-bs-target="#contacto-1">VER MÁS</a>
+                <p class="card-text"><blockquote class="d-none d-md-block">Está compuesta por 22 estados miembros y coopera con la NASA y otras agencias espaciales en misiones conjuntas.</blockquote></p>
+              </div>
+            </div>
+
+           <!--modal 1--> 
+
+            <div class="modal fade" id="contacto-1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content bg-dark text-white" style="border-radius: 20px;">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">SSPACENX</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <p> Se centra en la investigación científica y la exploración espacial, así como en el desarrollo de tecnología espacial.</p>
+                    <img src="imagenes/clientes_modal_1.jpg" class="img-fluid" alt="imagen modal 1" style="border-radius: 20px;">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary btn-lg text-white" data-bs-dismiss="modal">Cerrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!--imagen 2-->
+    
+          <article class="col-12 col-sm-6 col-lg-4">
+            <div class="card bg-dark text-white border-0 rounded-0">
+              <img src="imagenes/clientes_imagen_3.jpg" class="card-img" alt="imagen de cliente 2" height="350px">
+              <div class="card-img-overlay bg-image-contacto d-flex flex-column justify-content-md-center">
+                <h2 class="card-title">S3CCELX</h2>
+                <p class="card-text"><small>Es la agencia espacial de Rusia</small></p><br>
+                <a href="#" data-bs-toggle="modal" data-bs-target="#contacto-2">VER MÁS</a>
+                <p class="card-text"><blockquote class="d-none d-md-block">Sucesora de la legendaria agencia soviética de la era espacial.</blockquote></p>
+              </div>
+            </div>
+
+            <!--modal 2-->
+
+            <div class="modal fade" id="contacto-2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content bg-dark text-white" style="border-radius: 20px;">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">S3CCELX</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <p>Se especializa en lanzamientos de cohetes, misiones tripuladas y no tripuladas, así como en la investigación científica en el espacio.</p>
+                    <img src="imagenes/clientes_modal_2.jpg" class="img-fluid" alt="imagen modal 2" style="border-radius: 20px;">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary btn-lg text-white" data-bs-dismiss="modal">Cerrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!--imagen 3-->
+
+          <article class="col-12 col-sm-6 col-lg-4">
+            <div class="card bg-dark text-white border-0 rounded-0">
+              <img src="imagenes/clientes_imagen_1.jpg" class="card-img" alt="imagen de cliente 3" height="350px">
+              <div class="card-img-overlay bg-image-contacto d-flex flex-column justify-content-md-center">
+                <h2 class="card-title">NASA</h2>
+                <p class="card-text"><small>Es la agencia espacial de los Estados Unidos</small></p><br>
+                <a href="#" data-bs-toggle="modal" data-bs-target="#contacto-3">VER MÁS</a>
+                <p class="card-text"><blockquote class="d-none d-md-block"> Reconocida por sus programas emblemáticos como el Apollo que llevó al hombre a la Luna y el programa del transbordador espacial.</blockquote></p>
+              </div>
+            </div>
+
+            <!--modal 3-->
+
+            <div class="modal fade" id="contacto-3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content bg-dark text-white" style="border-radius: 20px;">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">NASA</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <p>Se enfoca en la exploración espacial, investigación científica y desarrollo tecnológico.</p>
+                    <img src="imagenes/clientes_modal_3.jpg" class="img-fluid" alt="imagen modal 3" style="border-radius: 20px;">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary btn-lg text-white" data-bs-dismiss="modal">Cerrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!--imagen 4-->
+
+          <article class="col-12 col-sm-6 col-lg-4">
+            <div class="card bg-dark text-white border-0 rounded-0">
+              <img src="imagenes/clientes_imagen_5.jpg" class="card-img" alt="imagen de cliente 4" height="350px">
+              <div class="card-img-overlay bg-image-contacto d-flex flex-column justify-content-md-center">
+                <h2 class="card-title">EPSAIIINA</h2>
+                <p class="card-text"><small>Es la agencia espacial de la India</small></p><br>
+                <a href="#" data-bs-toggle="modal" data-bs-target="#contacto-4">VER MÁS</a>
+                <p class="card-text"><blockquote class="d-none d-md-block">Conocida por sus logros en misiones espaciales con presupuestos relativamente bajos.</blockquote></p>
+              </div>
+            </div>
+
+            <!--modal 4-->
+
+            <div class="modal fade" id="contacto-4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content bg-dark text-white" style="border-radius: 20px;">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">EPSAIIINA</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <p> Se destaca por su enfoque en la investigación y el desarrollo de tecnología espacial, así como en misiones de exploración lunar y marciana.</p>
+                    <img src="imagenes/clientes_modal_4.jpg" class="img-fluid" alt="imagen modal 4" width="500px" style="border-radius: 20px;">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary btn-lg text-white" data-bs-dismiss="modal">Cerrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!--imagen 5-->
+
+          <article class="col-12 col-sm-6 col-lg-4">
+            <div class="card bg-dark text-white border-0 rounded-0">
+              <img src="imagenes/clientes_imagen_4.jpg" class="card-img" alt="imagen de cliente 5" height="350px">
+              <div class="card-img-overlay bg-image-contacto d-flex flex-column justify-content-md-center">
+                <h2 class="card-title">APRE</h2>
+                <p class="card-text"><small>Es la agencia espacial de China</small></p><br>
+                <a href="#" data-bs-toggle="modal" data-bs-target="#contacto-5">VER MÁS</a>
+                <p class="card-text"><blockquote class="d-none d-md-block"> Responsable de la planificación y ejecución de actividades espaciales. </blockquote></p>
+              </div>
+            </div>
+
+            <!--modal 5-->
+
+            <div class="modal fade" id="contacto-5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content bg-dark text-white" style="border-radius: 20px;">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">APRE</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <p>Ha realizado misiones a la Luna, Marte y lanzamientos de estaciones espaciales. Tiene un enfoque en la investigación científica y la exploración espacial.</p>
+                    <img src="imagenes/clientes_modal_5.jpg" class="img-fluid" alt="imagen modal 5" width="500px" style="border-radius: 20px;">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary btn-lg text-white" data-bs-dismiss="modal">Cerrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!--imagen 6-->
+
+          <article class="col-12 col-sm-6 col-lg-4">
+            <div class="card bg-dark text-white border-0 rounded-0">
+              <img src="imagenes/clientes_imagen_8.jpg" class="card-img" alt="imagen de cliente 6" height="350px">
+              <div class="card-img-overlay bg-image-contacto d-flex flex-column justify-content-md-center">
+                <h2 class="card-title">ONICERKIE</h2>
+                <p class="card-text"><small>Es la agencia espacial de Japón</small></p><br>
+                <a href="#" data-bs-toggle="modal" data-bs-target="#contacto-6">VER MÁS</a>
+                <p class="card-text"><blockquote class="d-none d-md-block">Ha participado en misiones como la sonda Hayabusa, que regresó muestras del asteroide Itokawa.</blockquote></p>
+              </div>
+            </div>
+
+            <!--modal 6-->
+
+            <div class="modal fade" id="contacto-6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content bg-dark text-white" style="border-radius: 20px;">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">ONICERKIE</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <p>Enfocada en la exploración del espacio exterior, la investigación científica y el desarrollo de tecnología espacial.</p>
+                    <img src="imagenes/clientes_modal_6.jpg" class="img-fluid" alt="imagen modal 6" style="border-radius: 20px;">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary btn-lg text-white" data-bs-dismiss="modal">Cerrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!--imagen 7-->
+
+          <article class="col-12 col-sm-6 col-lg-4">
+            <div class="card bg-dark text-white border-0 rounded-0">
+              <img src="imagenes/clientes_imagen_7.jpg" class="card-img" alt="imagen de cliente 7" height="350px">
+              <div class="card-img-overlay bg-image-contacto d-flex flex-column justify-content-md-center">
+                <h2 class="card-title">ESPACE</h2>
+                <p class="card-text"><small>Es la agencia espacial de Australia</small></p><br>
+                <a href="#" data-bs-toggle="modal" data-bs-target="#contacto-7">VER MÁS</a>
+                <p class="card-text"><blockquote class="d-none d-md-block">Una de las agencias mas jovenes siendo fundada en 2018.</blockquote></p>
+              </div>
+            </div>
+
+            <!--modal 7-->
+
+            <div class="modal fade" id="contacto-7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content bg-dark text-white" style="border-radius: 20px;">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">ESPACE</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <p>Se centra en la coordinación de actividades espaciales nacionales, la promoción de la investigación espacial y el desarrollo de capacidades en la industria aeroespacial australiana.</p>
+                    <img src="imagenes/clientes_modal_7.jpg" class="img-fluid" alt="imagen modal 7" style="border-radius: 20px;">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary btn-lg text-white" data-bs-dismiss="modal">Cerrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!--imagen 8-->
+
+          <article class="col-12">
+            <div class="card bg-dark text-white border-0 rounded-0">
+              <img src="imagenes/clientes_imagen_6.jpg" class="card-img" alt="imagen de cliente 8" height="450px">
+              <div class="card-img-overlay bg-image-contacto d-flex flex-column justify-content-md-center">
+                <h2 class="card-title">ESSPACO</h2>
+                <p class="card-text"><small>Es la agencia espacial de Francia</small></p><br>
+                <a href="#" data-bs-toggle="modal" data-bs-target="#contacto-8">VER MÁS</a>
+                <p class="card-text"><blockquote class="d-none d-md-block"> Responsable de la investigación y desarrollo en el ámbito espacial.</blockquote></p>
+              </div>
+            </div>
+
+            <!--modal 8-->
+
+            <div class="modal fade" id="contacto-8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content bg-dark text-white" style="border-radius: 20px;">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">ESSPACO</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <p>Ha participado en numerosas misiones espaciales, incluyendo satélites de observación de la Tierra, telecomunicaciones y exploración planetaria.</p>
+                    <img src="imagenes/clientes_modal_8.jpg" class="img-fluid" alt="imagen modal 8" width="500px" style="border-radius: 20px;">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary btn-lg text-white" data-bs-dismiss="modal">Cerrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </section>
+      </div> 
+    </main>
+
+    <!--footer de la pagina-->
+
+    <footer class="bg-light p-3">
+
+      <div class="container text-center">
+        <nav class="d-flex justify-content-evenly">
+          <a href="https://facebook.com" target="_blank"><i class="bi bi-facebook fs-3"></i></a>
+          <a href="https://twitter.com" target="_blank"><i class="bi bi-twitter fs-3"></i></a>
+          <a href="https://github.com" target="_blank"><i class="bi bi-github fs-3"></i></a>
+          <a href="https://youtube.com" target="_blank"><i class="bi bi-youtube fs-3"></i></a>
+          <a href="https://instagram.com" target="_blank"><i class="bi bi-instagram fs-3"></i></a>
+          <a href="https://m.me/user" target="_blank"><i class="bi bi-messenger fs-3"></i></a>
+          <a href="https://api.whatsapp.com/send?phone=573333333333" target="_blank"><i class="bi bi-whatsapp fs-3"></i></a>
+        </nav>
+        
+        <small class="text-white">
+          &copy;2023 @Jose Angel Videz Diaz
+        </small>
+      </div>
+      
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.js"> </script>
+
+  </body>
+</html>

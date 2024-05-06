@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="icon" href="imagenes/logo_nav.png">
+
+    <title>pagina de contacto</title>
+
+  </head>
+
+  <body>
+
+    <!--barra de navegacion-->
+    
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-light">
+        <div class="container">
+          <a class="navbar-brand" href="home.html">
+            <img src="imagenes/logo_nav.png" alt="icono de inicio">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-lg-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="home.html">Inicio</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Servicios
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="servicios.html#servicio_proyecciones"> Proyecciones astronomicas </a></li>
+                  <li><a class="dropdown-item" href="servicios.html#servicio_exhibiciones"> Exhibiciones interactivas </a></li>
+                  <li><a class="dropdown-item" href="servicios.html#servicio_observacion"> Observación del cielo en vivo </a></li>
+                </ul>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="clientes.html">Clientes</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="precios.html">Precios</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="contacto.html">Contacto</a>
+                </li>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <!--contenido de la pagina-->
+    <!--formulario y mapa de la pagina-->
+
+    <main class="pt-5 bg-gradient-inicio">
+      <div class="container mb-5">
+        <section class="row text-white">
+
+          <article class="col-12 pb-5 text-center">
+            <h1>Información de contacto</h1>
+            <p class="fs-5">En UNIVERSARIUM, valoramos tu 
+              interés y estamos aquí para ayudarte en cualquier pregunta, consulta 
+              o colaboración que puedas tener. Nos encantaría escuchar tus 
+              comentarios, responder tus preguntas y explorar nuevas oportunidades 
+              juntos.</p>
+            <p class="fs-5">Quieres saber mas, contactanos:</p>
+            <a class="fs-5" href="mailto:support_universarium@gmail.com">support_universarium@gmail.com</a>
+         </article>
+
+          <article class="col-12 col-lg-6 order-lg-1">
+            <h2 class="mb-3 text-center">Envianos tus comentarios</h2>
+            <form action="https://formsubmit.co/joseangelvidezdiaz@gmail.com" method="post">
+              <div class="mb-3">
+                <label class="form-label" for="name">Nombre:</label>
+                <input class="form-control" type="text" id="name" name="name" placeholder="escribe tu nombre" required>
+              </div>
+              
+              <div class="mb-3">
+                <label class="form-label" for="email">Correo:</label>
+                <input class="form-control" type="email" id="email" name="email" placeholder="escribe tu correo" required>
+              </div>
+
+              <div class="mb-4">
+                <label class="form-label" for="comments">Comentario:</label>
+                <textarea rows="5" class="form-control" id="comments" name="comments" placeholder="escribe tu comentario" required></textarea>
+              </div>
+
+              <div class="mb-5">
+                <input class="btn btn-outline-secondary btn-lg text-white" type="submit">
+                <input type="hidden" name="_next" value="http://127.0.0.1:5501/gracias.html"> 
+                <input type="hidden" name="_subject" value="respuestas del formulario de contacto de la pagina planetas">
+              </div>
+            </form>
+          </article>
+
+          <article class="col-12 col-lg-6">
+            <div class="ratio ratio-4x3">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22934.333976868696!2d121.82353157032385!3d25.138011102001546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x345d459d0b0a7a47%3A0x32cafc916cffb957!2sShen%E2%80%99ao%20Elephant%20Trunk%20Rock!5e0!3m2!1ses-419!2sco!4v1688080891768!5m2!1ses-419!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
+          </article>
+        </section>
+      </div>
+
+      <!--carrusel de la pagina-->
+
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="imagenes/contacto_carrusel_1.jpg" class="d-block w-100 img-fluid" alt="imagen de contacto 1" height="600px">
+            <div class="carousel-caption d-md-block bg-color-carrusel">
+              <h3>DATO CURIOSO</h3>
+              <p>El planetario contara con una sala oculta con gravedad cero, donde solo tendran acceso los usuarios frecuentes.</p>
+              <h5 style="color: orange;">¡PROXIMAMENTE!</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="imagenes/contacto_carrusel_2.jpg" class="d-block w-100 img-fluid" alt="imagen de contacto 2" height="600px">
+            <div class="carousel-caption d-md-block bg-color-carrusel">
+              <h3>DATO CURIOSO</h3>
+              <p>El planetario cuenta con documentos astronomicos originales de las antiguas civilizaciones, con informacion sobre el espacio.</p>
+              <h5 style="color: green;">¡EN EXHIBICIÓN!</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="imagenes/contacto_carrusel_3.jpg" class="d-block w-100 img-fluid" alt="imagen de contacto 3" height="600px">
+            <div class="carousel-caption d-md-block bg-color-carrusel">
+              <h3>DATO CURIOSO</h3>
+              <p>El area de ingenieros y cientificos del planetario avanza con el desarrollo de una sala inmersiva, con componentes reales del espacio, asi como la ambientación simulada de un entorno espacial.</p>
+              <h5 style="color: orange;">¡PROXIMAMENTE!</h5>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>      
+    </main>
+
+    <!--footer de la pagina-->
+
+    <footer class="bg-light p-3">
+
+      <div class="container text-center">
+        <nav class="d-flex justify-content-evenly">
+          <a href="https://facebook.com" target="_blank"><i class="bi bi-facebook fs-3"></i></a>
+          <a href="https://twitter.com" target="_blank"><i class="bi bi-twitter fs-3"></i></a>
+          <a href="https://github.com" target="_blank"><i class="bi bi-github fs-3"></i></a>
+          <a href="https://youtube.com" target="_blank"><i class="bi bi-youtube fs-3"></i></a>
+          <a href="https://instagram.com" target="_blank"><i class="bi bi-instagram fs-3"></i></a>
+          <a href="https://m.me/user" target="_blank"><i class="bi bi-messenger fs-3"></i></a>
+          <a href="https://api.whatsapp.com/send?phone=573333333333" target="_blank"><i class="bi bi-whatsapp fs-3"></i></a>
+        </nav>
+
+        <small class="text-white">
+          &copy;2023 @Jose Angel Videz Diaz
+        </small>
+      </div>
+      
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.js"> </script>
+
+  </body>
+</html>

@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="icon" href="imagenes/logo_nav.png">
+
+    <title>pagina de inicio</title>
+
+  </head>
+
+  <body>
+    
+    <!--barra de navegacion-->
+
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-light">
+        <div class="container">
+          <a class="navbar-brand" href="home.html">
+            <img src="imagenes/logo_nav.png" alt="icono de inicio">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-lg-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="home.html">Inicio</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Servicios
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="servicios.html#servicio_proyecciones"> Proyecciones astronomicas </a></li>
+                  <li><a class="dropdown-item" href="servicios.html#servicio_exhibiciones"> Exhibiciones interactivas </a></li>
+                  <li><a class="dropdown-item" href="servicios.html#servicio_observacion"> Observación del cielo en vivo </a></li>
+                </ul>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="clientes.html">Clientes</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="precios.html">Precios</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <!--contenido de la pagina-->
+
+    <main class="pt-5 bg-gradient-inicio">
+      <div class="container">
+        <section class="row text-white align-items-lg-center mb-5">
+
+          <article class="col-12 col-lg-5">
+            <h2 class="text-center">PAGINA UNIVERSARIUM</h2>
+            <P class="fs-5">
+              Nuestro planetario es un centro dedicado a la 
+              exploración del espacio y la astronomía. 
+              Ofrecemos experiencias educativas y emocionantes 
+              para todas las edades, desde proyecciones de 
+              películas inmersivas hasta observaciones del cielo 
+              nocturno con telescopios de última generación.
+            </P>
+            <a class="btn btn-outline-secondary btn-lg text-white mb-4" href="#servicios"><b>Saber más</b></a>
+          </article>
+
+          <article class="col-12 col-lg-7">
+            <Img class="img-fluid mb-4 border-img" src="imagenes/home_imagen_1.jpg" alt="planetario 1"/>
+          </article>
+
+          <article class="col-12 col-lg-5 order-lg-1">
+            <h2 class="text-center">¡TE INVITAMOS!</h2>
+            <P class="fs-5">
+              Sumérgete en el cosmos en nuestro planetario, 
+              donde te invitamos a explorar las maravillas 
+              del espacio exterior. Nuestras exhibiciones 
+              interactivas, presentaciones y eventos te 
+              llevarán en un viaje inolvidable a través de 
+              las estrellas, planetas y galaxias.
+            </P>
+          </article>
+
+          <article class="col-12 col-lg-7">
+            <Img class="img-fluid border-img" src="imagenes/home_imagen_2.jpg" alt="planetario 2"/>
+          </article>
+        </section>
+        
+        <!--cards de la pagina-->
+
+        <section id="servicios" class="row text-white">
+          <article class="col-12 col-md-6 col-lg-3 d-flex">
+            <div class="card mx-auto mb-3 bg-dark" style="width: 18rem; height: 23rem;">
+              <img src="imagenes/home_card_1.jpg" class="card-img-top bg-card-color" alt="imagen de servicios">
+              <div class="card-body text-center position-relative">
+                <h5 class="card-title">Nuestros servicios</h5>
+                <p class="card-text">En esta seccion encontraras un apartado donde se muestra todos los servicios disponibles.</p>
+                <a href="servicios.html" class="btn btn-outline-secondary btn-lg position-absolute bottom-0 start-50 translate-middle-x mb-4 text-white" style="width: 200px;">Ver mas<i class="bi bi-chevron-right"></i></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="col-12 col-md-6 col-lg-3 d-flex">
+            <div class="card mx-auto mb-3 bg-dark" style="width: 18rem; height: 23rem;">
+              <img src="imagenes/home_card_2.jpg" class="card-img-top bg-card-color" alt="imagen de clientes">
+              <div class="card-body text-center position-relative">
+                <h5 class="card-title">Nuestros clientes</h5>
+                <p class="card-text">En esta seccion encontraras un apartado con informacion de nustros clientes asociados.</p>
+                <a href="clientes.html" class="btn btn-outline-secondary btn-lg position-absolute bottom-0 start-50 translate-middle-x mb-4 text-white" style="width: 200px;">Ver mas<i class="bi bi-chevron-right"></i></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="col-12 col-md-6 col-lg-3 d-flex">
+            <div class="card mx-auto mb-3 bg-dark" style="width: 18rem; height: 23rem;">
+              <img src="imagenes/home_card_3.jpg" class="card-img-top bg-card-color" alt="imagen de precios">
+              <div class="card-body text-center position-relative">
+                <h5 class="card-title">Nuestros precios</h5>
+                <p class="card-text">En esta seccion encontraras un apartado para mirar el catalogo de precios que te ofrecemos</p>
+                <a href="precios.html" class="btn btn-outline-secondary btn-lg position-absolute bottom-0 start-50 translate-middle-x mb-4 text-white" style="width: 200px;">Ver mas<i class="bi bi-chevron-right"></i></a>
+              </div>
+            </div>
+          </article>
+          
+          <article class="col-12 col-md-6 col-lg-3 d-flex mb-4">
+            <div class="card mx-auto mb-3 bg-dark" style="width: 18rem; height: 23rem;">
+              <img src="imagenes/home_card_4.jpg" class="card-img-top bg-card-color" alt="imagen de contacto">
+              <div class="card-body text-center position-relative">
+                <h5 class="card-title">Nustro contacto</h5>
+                <p class="card-text">En esta seccion encontraras toda la informacion de comunicacion con nosotros</p>
+                <a href="contacto.html" class="btn btn-outline-secondary btn-lg position-absolute bottom-0 start-50 translate-middle-x mb-4 text-white" style="width: 200px;">Ver mas<i class="bi bi-chevron-right"></i></a>
+              </div>
+            </div>
+          </article>
+
+        </section>
+      </div>
+    </main>
+
+    <!--footer de la pagina-->
+
+    <footer class="bg-light p-3">
+
+      <div class="container text-center">
+        <nav class="d-flex justify-content-evenly">
+          <a href="https://facebook.com" target="_blank"><i class="bi bi-facebook fs-3"></i></a>
+          <a href="https://twitter.com" target="_blank"><i class="bi bi-twitter fs-3"></i></a>
+          <a href="https://github.com" target="_blank"><i class="bi bi-github fs-3"></i></a>
+          <a href="https://youtube.com" target="_blank"><i class="bi bi-youtube fs-3"></i></a>
+          <a href="https://instagram.com" target="_blank"><i class="bi bi-instagram fs-3"></i></a>
+          <a href="https://m.me/user" target="_blank"><i class="bi bi-messenger fs-3"></i></a>
+          <a href="https://api.whatsapp.com/send?phone=573333333333" target="_blank"><i class="bi bi-whatsapp fs-3"></i></a>
+        </nav>
+
+        <small class="text-white">
+          &copy;2023 @Jose Angel Videz Diaz
+        </small>
+      </div>
+      
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.js"> </script>
+
+  </body>
+</html>
