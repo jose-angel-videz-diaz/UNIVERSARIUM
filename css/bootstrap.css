@@ -176,7 +176,7 @@ a:hover{
 }
 
 ::selection {
-    background-color: #600f59; /* Cambia este color por el que desees */
-    color: #fff; /* Opcional: también puedes cambiar el color del texto seleccionado */
+    background-color: #600f59; 
+    color: #fff; 
 }
 
